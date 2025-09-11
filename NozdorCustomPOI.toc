@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: Nozdor Custom POI
+## Notes: Отображает пользовательские точки интереса на карте
+## Author: d_shorkin
+## Version: 1.0.0
+
+# Core files
+CustomPOIData.lua
+CustomPOIMap.lua
