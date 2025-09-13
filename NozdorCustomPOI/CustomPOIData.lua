@@ -148,7 +148,7 @@ local customPOIData = {
     },
     [464] = { -- Призрачные земли
         {faction = "Horde", type = "FlightMaster", x = 45.6, y = 30.6, name = "Повелитель небес Солнечное Крыло", description = "Укротитель дракондоров"},
-        {faction = "Neutral", type = "FlightMaster", x = 46.0, y = 31.0, name = "Киз Коловорот", description = "Распорядитель полетов"},
+        {faction = "Neutral", type = "FlightMaster", x = 74.6, y = 67.0, name = "Киз Коловорот", description = "Распорядитель полетов"},
     },
     [466] = { -- Полуостров Адского Пламени
         {faction = "Alliance", type = "FlightMaster", x = 87.4, y = 52.4, name = "Амиш Громовой Молот", description = "Укротитель грифонов"},
@@ -194,7 +194,7 @@ local customPOIData = {
         {faction = "Alliance", type = "FlightMaster", x = 59.4, y = 55.4, name = "Фурнан Высоколет", description = "Укротитель грифонов"},
     },
     [480] = { -- Пустоверть
-        {faction = "Horde", type = "FlightMaster", x = 65.2, y = 66.8, name = "Гарпакс", description = "Распорядитель полетов"},
+        {faction = "Neutral", type = "FlightMaster", x = 65.2, y = 66.8, name = "Гарпакс", description = "Распорядитель полетов"},
         {faction = "Neutral", type = "FlightMaster", x = 33.8, y = 64.0, name = "Крексил", description = "Распорядитель полетов"},
         {faction = "Neutral", type = "FlightMaster", x = 45.2, y = 34.8, name = "Гренник", description = "Распорядитель полетов"},
     },
@@ -276,7 +276,7 @@ local customPOIData = {
     },
     [505] = { -- Даларан
         {faction = "Neutral", type = "FlightMaster", x = 72.6, y = 45.6, name = "Алудан Белое Облако", description = "Распорядитель полетов"},
-        {faction = "Neutral", type = "FlightMaster", x = 70.8, y = 50.6, name = "Вневременной остров", description = "", mapId = 924},
+        {faction = "Neutral", type = "TimeIsland", x = 70.8, y = 50.6, name = "Вневременной остров", description = "", mapId = 924},
         {faction = "Neutral", type = "RaceTrainer", x = 30.8, y = 47.9, name = "Фолиант великих знаний", description = ""},
         {faction = "Neutral", type = "Transmog", x = 54.9, y = 59.0, name = "Т'Эмп", description = "Мастер трансмогрификации"},
     },

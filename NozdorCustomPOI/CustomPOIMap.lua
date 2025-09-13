@@ -99,6 +99,9 @@ function CustomPOIMap:GetPOITexture(type, faction)
     if type == "FlightMaster" then
         return "Interface\\TaxiFrame\\UI-Taxi-Icon-White", 0, 1, 0, 1
     end
+    if type == "TimeIsland" then
+        return "Interface\\TaxiFrame\\UI-Taxi-Icon-Yellow", 0, 1, 0, 1
+    end
     if type == "RaceTrainer" then
         return "Interface\\Minimap\\Tracking\\Class", 0, 1, 0, 1
     end

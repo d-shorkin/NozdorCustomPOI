@@ -2,7 +2,7 @@
 ## Title: Nozdor Custom POI
 ## Notes: Отображает пользовательские точки интереса на карте
 ## Author: d_shorkin
-## Version: 1.0.0
+## Version: 1.0.1
 
 # Core files
 CustomPOIData.lua
