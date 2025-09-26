@@ -473,5 +473,3 @@ if S_ATLAS_STORAGE then
         end
     end
 end
-
-print("ObjectIconsAtlas loaded")

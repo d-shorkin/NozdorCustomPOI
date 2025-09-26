@@ -3,8 +3,6 @@ local CustomPOIMap = CreateFrame("Frame")
 CustomPOIMap.icons = {}
 CustomPOIMap.playerFaction = UnitFactionGroup("player")
 
-local POITS = 0.07042857142
-
 CustomPOIMap:RegisterEvent("WORLD_MAP_UPDATE")
 CustomPOIMap:RegisterEvent("ZONE_CHANGED")
 
