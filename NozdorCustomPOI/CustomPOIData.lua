@@ -43,7 +43,7 @@ local customPOIData = {
         {faction = "Horde", type = "FlightMaster", x = 65.6, y = 24.2, name = "Вагрук", description = "Укротитель ветрокрылов"},
     },
     [35] = { -- Сумеречный лес
-        {faction = "Alliance", type = "FlightMaster", x = 22.6, y = 46.8, name = "Фелисия Мелайн", description = "Укротительница грифонов"},
+        {faction = "Alliance", type = "FlightMaster", x = 77.6, y = 44.4, name = "Фелисия Мелайн", description = "Укротительница грифонов"},
     },
     [36] = { -- Лок Модан
         {faction = "Alliance", type = "FlightMaster", x = 33.8, y = 50.8, name = "Торгрум Боррелсон", description = "Укротитель грифонов"},
@@ -283,6 +283,31 @@ local customPOIData = {
     [511] = { -- Лес Хрустальной Песни
         {faction = "Alliance", type = "FlightMaster", x = 72.0, y = 80.8, name = "Галендрор Белое Крыло", description = "Укротитель гиппогрифов"},
         {faction = "Horde", type = "FlightMaster", x = 78.6, y = 50.2, name = "Повелительница небес Бэрик", description = "Укротительница дракондоров"},
+    },
+	[925] = { -- Вневременной остров
+        {faction = "Neutral", type = "Chromie", x = 34.57, y = 53.63, name = "Хроми", description = "Хранительница времени"},
+        {faction = "Neutral", type = "Quest", x = 26.95, y = 54.15, name = "Зидорму", description = "Торговка"},
+        {faction = "Neutral", type = "Vendor", x = 42.69, y = 55.79, name = "Император Шаохао", description = "Дух императора"},
+        {faction = "Neutral", type = "Quest", x = 29.29, y = 31.51, name = "Тайянь", description = "Мастер боевых искусств"},
+		{faction = "Neutral", type = "Casino", x = 58.50, y = 42.69, name = "Брат Кроличья Лапка", description = "Казино"},
+        --{faction = "Neutral", type = "Vendor", x = 65.02, y = 50.50, name = "Ллор и Эвелина", description = "Торговцы"},
+        {faction = "Neutral", type = "Shrine", x = 23.58, y = 29.24, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 32.61, y = 51.35, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 28.93, y = 61.77, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 30.50, y = 68.57, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 32.24, y = 71.88, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 39.63, y = 82.32, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 47.53, y = 62.64, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 47.78, y = 48.85, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 31.28, y = 40.99, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 32.29, y = 31.72, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 63.08, y = 52.27, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "Shrine", x = 64.53, y = 71.28, name = "Святилище", description = ""},
+        {faction = "Neutral", type = "RareMobs", x = 54.7, y = 44.7, name = "Тсаво'ка", description = "Рарник"},
+		{faction = "Neutral", type = "RareMobs", x = 46.6, y = 85.3, name = "Зесква", description = "Рарник"},
+		{faction = "Neutral", type = "RareMobs", x = 57.1, y = 76.1, name = "Смотритель Осу", description = "Рарник"},
+		{faction = "Neutral", type = "RareMobs", x = 52.8, y = 81.3, name = "Якур Ордосский", description = "Рарник"},
+		{faction = "Neutral", type = "RareMobs", x = 65.8, y = 73.9, name = "Буфо", description = "Рарник"},
     },
 }
 

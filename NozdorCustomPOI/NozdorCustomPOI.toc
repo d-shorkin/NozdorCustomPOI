@@ -2,7 +2,10 @@
 ## Title: Nozdor Custom POI
 ## Notes: Отображает пользовательские точки интереса на карте
 ## Author: d_shorkin
-## Version: 1.0.1
+## Version: 1.0.3
+
+# https://warcraft.wiki.gg/wiki/Warcraft_Wiki:List_of_small_icons
+media\minimap\ObjectIconsAtlas.lua
 
 # Core files
 CustomPOIData.lua

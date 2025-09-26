@@ -43,14 +43,14 @@ function CustomPOIMap:UpdateWorldCustomPOIs()
             if customPOI.faction == self.playerFaction or customPOI.faction == "Neutral" then
                 icon = CustomPOIMap:GetIcon(i - iconSkip)
                 texture, texCoordLeft, texCoordRight, texCoordTop, texCoordBottom = CustomPOIMap:GetPOITexture(customPOI.type, customPOI.faction)
-    
+
                 icon.name = customPOI.name
                 icon.description = customPOI.description
                 icon.mapId = customPOI.mapId
-    
+
                 icon.texture:SetTexture(texture)
                 icon.texture:SetTexCoord(texCoordLeft, texCoordRight, texCoordTop, texCoordBottom)
-    
+
                 icon:SetPoint(
                     "CENTER",
                     "WorldMapDetailFrame",
@@ -62,7 +62,7 @@ function CustomPOIMap:UpdateWorldCustomPOIs()
             else
                 iconSkip = iconSkip + 1
             end
-            
+
         end
     end
 end
@@ -77,7 +77,7 @@ end
 function CustomPOIMap:CreateIcon(index)
     local button = CreateFrame("Button", "WorldMapCustomFramePOI" .. index, WorldMapButton)
     button:SetSize(32, 32)
-    
+
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
     button:SetScript("OnEnter", WorldMapPOI_OnEnter)
 	button:SetScript("OnLeave", WorldMapPOI_OnLeave)
@@ -95,21 +95,38 @@ function CustomPOIMap:CreateIcon(index)
 end
 
 function CustomPOIMap:GetPOITexture(type, faction)
-    
     if type == "FlightMaster" then
         return "Interface\\TaxiFrame\\UI-Taxi-Icon-White", 0, 1, 0, 1
     end
     if type == "TimeIsland" then
-        return "Interface\\TaxiFrame\\UI-Taxi-Icon-Yellow", 0, 1, 0, 1
+        return unpack(S_ATLAS_STORAGE["chromietime-32x32"], 9), unpack(S_ATLAS_STORAGE["chromietime-32x32"], 3, 6)
     end
     if type == "RaceTrainer" then
-        return "Interface\\Minimap\\Tracking\\Class", 0, 1, 0, 1
+        return unpack(S_ATLAS_STORAGE["class"], 9), unpack(S_ATLAS_STORAGE["class"], 3, 6)
     end
     if type == "Raid" then
-        return "Interface\\Minimap\\POIIcons", POITS * 11, POITS * 12, POITS * 12, POITS * 13
+        return unpack(S_ATLAS_STORAGE["raid"], 9), unpack(S_ATLAS_STORAGE["raid"], 3, 6)
     end
     if type == "Transmog" then
-        return "Interface\\Minimap\\POIIcons", POITS * 5, POITS * 6, POITS * 12, POITS * 13
+        return unpack(S_ATLAS_STORAGE["custom-transmogrifier"], 9), unpack(S_ATLAS_STORAGE["custom-transmogrifier"], 3, 6)
+    end
+    if type == "RareMobs" then
+        return unpack(S_ATLAS_STORAGE["dungeonskull"], 9), unpack(S_ATLAS_STORAGE["dungeonskull"], 3, 6)
+    end
+	if type == "Chromie" then
+        return unpack(S_ATLAS_STORAGE["chromiemap"], 9), unpack(S_ATLAS_STORAGE["chromiemap"], 3, 6)
+    end
+	if type == "Casino" then
+        return unpack(S_ATLAS_STORAGE["creationcatalyst-32x32"], 9), unpack(S_ATLAS_STORAGE["creationcatalyst-32x32"], 3, 6)
+    end
+    if type == "Vendor" then
+        return unpack(S_ATLAS_STORAGE["banker"], 9), unpack(S_ATLAS_STORAGE["banker"], 3, 6)
+    end
+    if type == "Quest" then
+        return unpack(S_ATLAS_STORAGE["questdaily"], 9), unpack(S_ATLAS_STORAGE["questdaily"], 3, 6)
+    end
+    if type == "Shrine" then
+        return unpack(S_ATLAS_STORAGE["progenitorflightmaster-32x32"], 9), unpack(S_ATLAS_STORAGE["progenitorflightmaster-32x32"], 3, 6)
     end
 
     return "Interface\\Minimap\\POIIcons", 0,0,0,0
